@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Backend", "src\API\Backend\Backend.csproj", "{4A8CBE0A-5E9A-4B2C-A342-0604ADA1D2A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedNotepad.Core", "src\Domain\SharedNotepad.Core\SharedNotepad.Core.csproj", "{68969F07-3272-4AE9-98DD-948D4E473882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedNotepad.Infrastructure", "src\Infrastructure\SharedNotepad.Infrastructure\SharedNotepad.Infrastructure.csproj", "{FDBE829B-CA87-42C9-BC2A-CCA55AE2E93D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4A8CBE0A-5E9A-4B2C-A342-0604ADA1D2A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A8CBE0A-5E9A-4B2C-A342-0604ADA1D2A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A8CBE0A-5E9A-4B2C-A342-0604ADA1D2A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A8CBE0A-5E9A-4B2C-A342-0604ADA1D2A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68969F07-3272-4AE9-98DD-948D4E473882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68969F07-3272-4AE9-98DD-948D4E473882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68969F07-3272-4AE9-98DD-948D4E473882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68969F07-3272-4AE9-98DD-948D4E473882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDBE829B-CA87-42C9-BC2A-CCA55AE2E93D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDBE829B-CA87-42C9-BC2A-CCA55AE2E93D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDBE829B-CA87-42C9-BC2A-CCA55AE2E93D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDBE829B-CA87-42C9-BC2A-CCA55AE2E93D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,75 @@
+﻿############################
+# .NET
+############################
+bin/
+obj/
+out/
+[Bb]uild/
+[Dd]ebug*/
+[Rr]elease*/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+############################
+# Visual Studio
+############################
+.vs/
+.vscode/
+.idea/
+*.rsuser
+
+############################
+# Rider
+############################
+.idea/
+
+############################
+# ASP.NET Core
+############################
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+############################
+# EF Core
+############################
+**/Migrations/*.csproj
+__EFMigrationsHistory
+
+############################
+# Logs
+############################
+*.log
+logs/
+
+############################
+# React / Node
+############################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+dist/
+build/
+
+############################
+# Environment files
+############################
+.env
+.env.*
+!.env.example
+
+############################
+# Docker
+############################
+**/docker-compose.override.yml
+*.pid
+
+############################
+# OS
+############################
+.DS_Store
+Thumbs.db
