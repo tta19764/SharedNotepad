@@ -18,12 +18,12 @@ services:
       retries: 10
 
   backend:
-    image: mcr.microsoft.com/dotnet/sdk:10.0
+    build:
+      context: .
+      dockerfile: src/API/Backend/Dockerfile
+    image: sharednotepad-backend:latest
     container_name: sharednotepad-backend
-    working_dir: /app
-    volumes:
-      - ./:/app
-    command: ["dotnet", "run", "--project", "src/API/Backend/Backend.csproj", "--urls", "http://0.0.0.0:8080"]
+    restart: unless-stopped
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings__DefaultConnection: Host=postgres;Port=5432;Database=shared_notepad;Username=postgres;Password=postgres
@@ -32,6 +32,19 @@ services:
         condition: service_healthy
     ports:
       - "8080:8080"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: sharednotepad-frontend:latest
+    container_name: sharednotepad-frontend
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_started
+    ports:
+      - "3000:80"
 
 volumes:
   postgres_data:

@@ -8,7 +8,7 @@ public static class NotesEndpoints
 {
     public static IEndpointRouteBuilder MapNotesEndpoints(this IEndpointRouteBuilder app)
     {
-        var group = app.MapGroup("/api/notes");
+        var group = app.MapGroup("/notes");
 
         group.MapGet("/{id:guid}", async (Guid id, INotesRepository repository) =>
         {
@@ -23,7 +23,7 @@ public static class NotesEndpoints
         {
             var note = await repository.CreateAsync();
             var response = new CreateNoteResponse(note.Id);
-            return Results.Created($"/api/notes/{note.Id}", response);
+            return Results.Created($"/notes/{note.Id}", response);
         })
         .WithName("CreateNote");
 
